@@ -1,0 +1,9 @@
+# Ignore node_modules
+node_modules/
+
+# Ignore bundle.js and related generated files in public
+public/bundle.js
+public/bundle.js.LICENSE.txt
+
+# Ignore package-lock.json (optional, if you want to ignore it)
+package-lock.json
