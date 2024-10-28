@@ -21,9 +21,15 @@ module.exports = {
         use: ["style-loader", "css-loader"],
       },
       {
-        test: /\.(gif|png|jp?g|svg)$/i,
+        test: /\.(jpg|jpeg|png|gif|svg)$/i,
+        type: 'asset/resource',  // This replaces file-loader in Webpack 5
+        generator: {
+          filename: 'assets/[name][ext]', // Customize output directory for assets
+        },
+      },
+      {
+        test: /\.(jpg|jpeg|png|gif|svg)$/i,
         use: [
-          "file-loader",
           {
             loader: "image-webpack-loader",
             options: {
@@ -32,7 +38,9 @@ module.exports = {
             },
           },
         ],
+        enforce: 'pre', // This makes sure image-webpack-loader runs first for image optimization
       },
     ],
   },
 };
+
