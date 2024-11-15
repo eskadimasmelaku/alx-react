@@ -15,9 +15,10 @@
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
     "aphrodite": "^2.4.0",
-    "prop-types": "^15.7.2",
+    "prop-types": "^15.8.1",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "react-test-renderer": "^18.3.1"
   },
   "devDependencies": {
     "@babel/core": "^7.14.6",
@@ -28,16 +29,17 @@
     "babel-loader": "^8.2.2",
     "css-loader": "^5.2.6",
     "enzyme": "^3.11.0",
-    "enzyme-adapter-react-16": "^1.15.6",
+    "enzyme-adapter-react-16": "^1.15.8",
     "enzyme-adapter-react-17-updated": "^1.0.2",
+    "eslint": "^9.14.0",
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.3.2",
     "image-webpack-loader": "^7.0.1",
-    "jest": "^27.0.6",
+    "jest": "^27.5.1",
     "style-loader": "^3.0.0",
-    "webpack": "^5.41.1",
+    "webpack": "^5.96.1",
     "webpack-cli": "^4.10.0",
-    "webpack-dev-server": "^3.11.2"
+    "webpack-dev-server": "^3.11.3"
   },
   "jest": {
     "setupFilesAfterEnv": [
@@ -48,5 +50,3 @@
     }
   }
 }
-
-
